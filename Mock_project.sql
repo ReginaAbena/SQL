@@ -1,8 +1,8 @@
 Show databases;
 use mock_project;
 Show tables;
-DROP TABLE Product_Masterlist;
-Select * from Product_Masterlist;
+DROP TABLE Rating;
+Select * from Rating;
 
 -- All products in database listed in Product_Masterlist table
 create table Product_Masterlist(
@@ -91,6 +91,37 @@ create table Rating(
 Product_Name VARCHAR(75),
 Rating INTEGER
 );
+
+INSERT INTO Rating (Product_Name, Rating) 
+VALUES 
+('Hair Cotton Blend Shampoo', 3),
+('Rosewater Sulfate-Free Miracle Moisture Boost',4),
+('Coconut Oil Formula Leave-In Conditioner',5),
+('Shea Butter Leave-In Conditioning Repair Cream', 3),
+('Make It Last Wash N’ Go Conditioner',5),
+('Dont Shrink Elongating Gel',2),
+('The Pure',5),
+('Dream Lengths Restoring Conditioner',3),
+('Propure Light Moisture Conditioner',2),
+('Care Between Washes Dry Shampoo Foam',5),
+(' Quenching Coconut Curls Mousse',3),
+('Knot Today Leave-In Conditioner',3),
+('Leave-In Conditioner',2),
+('Curling Custard Gel',5),
+('Natural Curl Love Milk',4),
+('Twist Defining Cream',4),
+('Argan Buttermilk Leave-In Milk',5),
+('Mongongo Oil',5),
+('Anti-Frizz Gel',2),
+('The Replenisher Cleansing Conditioner',1),
+('Bouncy Curls Defining Gel',1),
+('Moisture Rich Sulfate  For Natural Hair',3),
+('Gel Ultimate Hold With Frizz Control',1),
+('Ultra Defining Gel',3),
+('Melt Into Moisture Matcha Green Tea Butter Mask',2),
+('Super Dry Shampoo',5),
+('Nutriplenish Leave-In Conditioner',2),
+('Matcha + Apple Replenishing Superfood Shampoo',3);
 
 -- Where to buy all the products found here. List of products and if they are found in boots/superdrug/asos.
 create table Retail_Store(
