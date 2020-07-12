@@ -122,11 +122,13 @@ VALUES
 ('Matcha + Apple Replenishing Superfood Shampoo',3);
 
 -- Table 8: Where to buy all the products found here. List of products and if they are found in boots/superdrug/asos.
-create table Retail_Store(
+CREATE TABLE Retail_store(
 Product_Name VARCHAR(75),
-Product_ID INTEGER,
+Product_Id Integer,
 Product_Brand VARCHAR(50),
-Retail_Store VARCHAR(10)
+Retail_Store VARCHAR(10),
+PRIMARY KEY (Product_Id),
+FOREIGN KEY (Product_name) REFERENCES Product_Masterlist (Product_Name)
 );
 
 -- Using a subquery to find the product name and product price of products that can be bought on Asos and are Vegan.
