@@ -1,8 +1,6 @@
-Show databases;
 use mock_project;
-Show tables;
-DROP TABLE Rating;
-Select * from Rating;
+DROP TABLE Retail_Store;
+Select * from Retail_Store;
 
 -- All products in database listed in Product_Masterlist table
 create table Product_Masterlist(
@@ -126,6 +124,7 @@ VALUES
 -- Where to buy all the products found here. List of products and if they are found in boots/superdrug/asos.
 create table Retail_Store(
 Product_Name VARCHAR(75),
+Product_ID INTEGER,
 Product_Brand VARCHAR(50),
 Retail_Store VARCHAR(10)
 );
