@@ -10,6 +10,38 @@ Product_Hair_Texture VARCHAR(10),
 Product_Hair_Type VARCHAR(2),
 Product_Brand VARCHAR(50)
 );
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (1,'Hair Cotten Blend Shampoo','Shampoo','Straight','1A','Aveeno');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (2,'Rosewater Sulfate-Free Miracle Moisture Boost', 'Shampoo', 'Straight','1A','Pantene');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (3,'Coconut Oil Formula Leave-In Conditioner','Leave-In Conditioner', 'Wavy','2B','Palmers');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (4,'Shea Butter Leave-In Conditioning Repair Cream','Leave-In Conditioner','Wavy','2C','Cantu');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (6,'Make It Last Wash N’ Go Conditioner','Conditioner','Wavy','2C','Sheamoisture');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (7,'Dont Shrink Elongating Gel','Gel','Coily','4B','Aunt Jackies');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (8,'The Pure', 'Shampoo', 'Wavy', '2A', 'One Atelier Fekkai');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (9,'Dream Lengths Restoring Conditioner', 'Conditioner', 'Straight','1A','LOreal');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (10,'Propure Light Moisture Conditioner',	'Conditioner', 'Straight', '1A','Tresemmé');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (11,'Care Between Washes Dry Shampoo Foam', 'Shampoo','Straight','1A','Dove');
+INSERT INTO product_masterlist (product_id,product_name,product_category,product_hair_texture,product_hair_type,product_brand) VALUES (12,'Quenching Coconut Curls Mousse','Mousse','Curly','3A','Ogx');
+SELECT* FROM product_masterlist;
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES ( 13,'Knot Today Leave-In Conditioner','Leave-In Conditioner','Curly','3B','Kinky Curly');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (14,'Leave-In Conditioner','Leave-In Conditioner','Curly','3C','Mixed Chicks');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES ( 15,'Curling Custard Gel','Gel','Coily','4A','Kinky Curly');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (16,'Natural Curl Love Milk','Shampoo','Coily','4B','Camille Rose');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES ( 17,'Twist Defining Cream','Cream','Coily','4C','As I Am');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES ( 18,'Argan Buttermilk Leave-In Milk','Leave-In Conditioner','Coily','4C','Creme Of Nature');
+SELECT*FROM product_masterlist;
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES ( 19,'Mongongo Oil','Oil','Coily','4A','Ouidad');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES ( 20,'Anti-Frizz Gel','Gel', 'Curly','3A', 'Moptop');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES ( 21,'The Replenisher Cleansing Conditioner','Conditioner','Curly','3B','Apothecare');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES ( 22,'Bouncy Curls Defining Gel','Gel','Curly','3B','Tresemmé');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES ( 23,'Moisture Rich Sulfate Free For Natural Hair', 'Shampoo','Curly','3C','Tgin');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (24,'Gel Ultimate Hold With Frizz Control','Gel','Wavy','2A','Curl Keeper');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES ( 25,'Ultra Defining Gel', 'Gel','Wavy', '2B','Devacurl');
+SELECT*FROM product_masterlist; 
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (26,'Melt Into Moisture Matcha Green Tea Butter Mask','Conditioner','Wavy','2C', 'Devacurl');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (27, 'Super Dry Shampoo', 'Shampoo', 'Straight', '1A', 'Ouai');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES ( 28,'Nutriplenish Leave-In Conditioner', 'Conditioner', 'Straight', '1A', 'Aveda');
+INSERT INTO product_masterlist (product_id,product_name, product_category,product_hair_texture, product_hair_type,product_brand) VALUES (29, 'Matcha + Apple Replenishing Superfood Shampoo', 'Shampoo','Wavy', '2A', 'Briogeo');
+SELECT*FROM product_masterlist;
 
 -- Products that can be bought in Superdrug listed here
 create table Superdrug(
@@ -64,6 +96,7 @@ Product_ID Integer PRIMARY KEY NOT NULL,
 Product_Name VARCHAR(75),
 Rating INTEGER
 );
+INSERT INTO Rating (product_id,product_name, rating) VALUES (1,'Hair Cotton Blend Shampoo', 3);
 
 -- Where to buy all the products found here. List of products and if they are found in boots/superdrug/asos.
 create table Retail_Store(
