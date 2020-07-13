@@ -1,0 +1,84 @@
+CREATE DATABASE HAIR;
+USE HAIR;
+
+-- All products in database listed in Product_Masterlist table
+create table Product_Masterlist(
+Product_ID Integer PRIMARY KEY NOT NULL,
+Product_Name VARCHAR(75),
+Product_Category VARCHAR(50),
+Product_Hair_Texture VARCHAR(10),
+Product_Hair_Type VARCHAR(2),
+Product_Brand VARCHAR(50)
+);
+
+-- Products that can be bought in Superdrug listed here
+create table Superdrug(
+Product_ID Integer PRIMARY KEY NOT NULL,
+Product_Name VARCHAR(75),
+Product_Price DECIMAL(4,2),
+Product_Hair_Texture VARCHAR(10),
+Product_Hair_Type VARCHAR(2)
+);
+
+-- Products that can be bought in Boots listed here
+create table Boots(
+Product_ID Integer PRIMARY KEY NOT NULL,
+Product_Name VARCHAR(75),
+Product_Price DECIMAL(4,2),
+Product_Hair_Texture VARCHAR(10),
+Product_Hair_Type VARCHAR(2),
+Shipping_Price DECIMAL (4,2)
+);
+
+-- Products that can be bought on Asos listed here
+create table Asos(
+Product_ID Integer PRIMARY KEY NOT NULL,
+Product_Name VARCHAR(75),
+Product_Price DECIMAL(4,2),
+Product_Hair_Texture VARCHAR(10),
+Product_Hair_Type VARCHAR(2)
+);
+
+-- Ethical questions about products found in this table
+create table Ethics(
+Product_ID Integer PRIMARY KEY NOT NULL,
+Product_Name VARCHAR(75),
+Product_Brand VARCHAR(50),
+Cruelty_Free VARCHAR(3),
+Vegan VARCHAR(3),
+Natural_Ingredients VARCHAR(3)
+);
+
+-- Chemicals found in products shown in this table
+create table Chemicals(
+Product_ID Integer PRIMARY KEY NOT NULL,
+Product_Name VARCHAR(75),
+Parabens VARCHAR(3),
+Sulphates VARCHAR(3),
+Silicones VARCHAR(3)
+);
+
+-- Product Ratings (out of 5 stars) found in this table
+create table Rating(
+Product_ID Integer PRIMARY KEY NOT NULL,
+Product_Name VARCHAR(75),
+Rating INTEGER
+);
+
+-- Where to buy all the products found here. List of products and if they are found in boots/superdrug/asos.
+create table Retail_Store(
+Product_ID Integer,
+Product_Name VARCHAR(75),
+Order_Id INTEGER PRIMARY KEY NOT NULL,
+Product_Brand VARCHAR(50),
+Retail_Store VARCHAR(10),
+FOREIGN KEY (Product_ID) REFERENCES Product_Masterlist (Product_ID)
+);
+
+Desc retail_store;
+
+-- Queries
+-- which products from superdrug are suitable for those with coily hair?
+-- find the products that have a rating of 3 and below
+-- what products are vegan friendly and natural ingredients?
+-- find a hair product that is less than 5 in superdrug, boots and argos
