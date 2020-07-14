@@ -52,7 +52,7 @@ Product_Price DECIMAL(4,2),
 Product_Hair_Texture VARCHAR(10),
 Product_Hair_Type VARCHAR(2)
 );
-INSERT INTO SUPERDRUG (product_id,product_name,product_price,product_hair_type,product_hair_type) VALUES (1,'Rosewater Sulfate-Free Miracle Moisture Boost',3.99,'Straight','1A');
+INSERT INTO SUPERDRUG (product_id,product_name,product_price,product_hair_texture,product_hair_type) VALUES (1,'Rosewater Sulfate-Free Miracle Moisture Boost',3.99,'Straight','1A');
 
 -- Products that can be bought in Boots listed here
 create table Boots(
